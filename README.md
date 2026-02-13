@@ -37,7 +37,13 @@ A React-based web application that combines traditional Javanese Primbon divinat
    Open `.env.local` and add your **GLM-4 API Key**:
 
    ```env
-   VITE_GLM_API_KEY=your_actual_key_here
+   VITE_AI_PROVIDER=glm# Options: glm, google, mock
+
+   VITE_GLM_API_KEY=your_z_ai_api_key_here
+   VITE_GLM_MODEL=glm-4-flash
+   
+   VITE_GOOGLE_API_KEY=your_google_api_key_here
+   VITE_GOOGLE_MODEL=gemini-2.5-flash
    ```
 
 3. **Run Development Server**
