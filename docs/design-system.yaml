@@ -1,0 +1,92 @@
+theme: "Mystical Modern"
+version: "1.0"
+vibe: "Mysterious, Authoritative, Premium"
+
+tokens:
+  colors:
+    primary:
+      value: "#FFD700"
+      usage: "Primary actions, highlights, active states"
+    primary-foreground:
+      value: "#000000"
+      usage: "Text on primary actions"
+    background:
+      value: "#1a1a2e"
+      usage: "App background, page body"
+    surface:
+      value: "#16213e"
+      usage: "Cards, modals, sidebars"
+    surface-hover:
+      value: "#0f3460"
+      usage: "Hover states for surface elements"
+    text-primary:
+      value: "#EDEDED"
+      usage: "High contrast text on dark"
+    text-muted:
+      value: "#94a3b8"
+      usage: "Secondary text, captions"
+    border:
+      value: "#334155"
+      usage: "Dividers, inputs"
+    error:
+      value: "#ef4444"
+      usage: "Error states, 'Naas' days"
+    success:
+      value: "#22c55e"
+      usage: "Success states, 'Hari Baik'"
+
+  typography:
+    headings:
+      family: "Cinzel"
+      weights: [ 500, 700 ]
+      usage: "Headings, Hero Sections, 'Weton' results"
+    body:
+      family: "Inter"
+      weights: [ 400, 600 ]
+      usage: "Paragraphs, Interface Text, Inputs"
+    styles:
+      text-display:
+        size: "2.25rem"
+        lineHeight: "1.1"
+      text-h1:
+        size: "1.875rem"
+        lineHeight: "1.2"
+      text-h2:
+        size: "1.5rem"
+        lineHeight: "1.3"
+      text-body:
+        size: "1rem"
+        lineHeight: "1.5"
+      text-small:
+        size: "0.875rem"
+        lineHeight: "1.5"
+
+  spacing:
+    baseUnit: "4px"
+    radius: "0.5rem"
+
+components:
+  buttons:
+    primary:
+      bg: "color-primary"
+      text: "color-primary-foreground"
+      shape: "rounded 0.5rem"
+      effect: "Glow 0 0 10px #FFD700"
+    ghost:
+      bg: "transparent"
+      text: "color-primary"
+      border: "1px solid color-primary"
+
+  cards:
+    bg: "color-surface"
+    border: "1px solid color-border"
+    padding: "1.5rem"
+
+  inputs:
+    bg: "color-background"
+    border: "color-border"
+    focus: "ring 2px color-primary"
+
+patterns:
+  layout: "Oracle Layout - Center focused inputs, revealed results"
+  animation: "Slow ease-in fade for results"
